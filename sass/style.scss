@@ -1,0 +1,119 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #161518;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.color {
+  color: #a883f2;
+}
+
+.all-button {
+  background-color: #a883f2;
+  border: 2px solid transparent;
+  transition: 0.5s;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: white;
+  &:hover {
+    background-color: transparent;
+    color: #a883f2;
+    border: 2px solid #a883f2;
+    transition: 0.5s;
+    transform: rotate(360deg);
+  }
+}
+
+.all-input {
+  border: 2px solid #a883f2;
+  &:focus {
+    transition: 0.5s;
+    box-shadow: 0 0 10px #a883f2;
+    border: 2px solid #a883f2 !important;
+  }
+}
+
+.cardTask {
+  background-color: #212023;
+  border: 1px solid rgb(64, 61, 61);
+  color: white;
+  min-width: 430px;
+}
+
+#cards-add-list {
+  width: 500px;
+  background-color: #212023;
+  border-radius: 5px;
+  border: 1px solid rgb(64, 61, 61);
+}
+.icon-color {
+  color: #00ac0e;
+}
+.button-plus-minus {
+  width: 40px;
+  font-size: 18px;
+}
+input {
+  outline: none !important;
+  &:focus {
+    border: none !important;
+  }
+}
+.bg-color {
+  border: 2px solid #a883f2;
+  background: #a883f2;
+  border-radius: 5px;
+  color: transparent;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+  &:hover {
+    transition: 0.3s;
+    background: transparent;
+    color: #a883f2;
+    border: 2px solid #a883f2;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- link-css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="bg-img " class="container-fluid">
+      <div class="text-header text-center py-3">
+        <h1 class="text-light">To-Dos</h1>
+      </div>
+      <div class="d-flex flex-column gap-3 align-items-center">
+        <div id="cards-add-list">
+          <div class="p-3">
+            <label
+              for="add-list-form"
+              class="text-light w-100 fw-bold text-center fs-5 my-3"
+              >Add list.</label
+            >
+            <div class="d-flex align-items-center gap-3">
+              <input
+                type="text"
+                id="add-list-form"
+                placeholder="Add new list"
+                class="form-control my-2 all-input"
+              />
+
+              <button class="btn all-button" id="btn-add">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="cards-task"
+          class="d-flex align-items-start flex-wrap justify-content-center gap-3 my-5"
+        >
+          <!-- Element And Card Entered -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================== -->
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- axios -->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- script js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

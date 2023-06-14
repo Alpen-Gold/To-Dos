@@ -28,6 +28,7 @@ let renderList = () => {
           <li><button class="dropdown-item" type="button" onclick="deleteList(${index})">Delete List</button></li>
           <li><button class="dropdown-item" type="button" onclick="deleteCompletedList(${index})">Delete all tasks</button></li>
           <li><button class="dropdown-item" type="button" onclick="duplicateList(${index})">Duplicate list</button></li>
+          <li><button class="dropdown-item" type="button" onclick="deleteCompletedTasks(${index})">Delete all completed tasks</button></li>
         </ul>
         </div>
       
@@ -198,7 +199,6 @@ let backTask = (arrayIndex, arrayTaskIndex) => {
 
   array[arrayIndex].tasks[arrayTaskIndex].completed = false;
 
-  renderList();
   local();
 };
 // Back task ehit
@@ -283,6 +283,14 @@ let duplicateList = (index) => {
   renderList();
 };
 // Duplicate end
+
+let deleteCompletedTasks = (index) => {
+  let newTaasks = array[index].tasks.filter((task) => !task.completed);
+
+  array[index].tasks = newTaasks;
+  renderList();
+  local();
+};
 
 // start Project -----------------------------------------------------
 renderList();

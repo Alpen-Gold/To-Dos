@@ -34,7 +34,7 @@ let renderList = () => {
         </div>
         
         </div>
-        <div class="d-flex align-items-center gap-2">
+        <div class="d-flex align-items-center justify-content-between gap-2">
         <input
         type="text"
         id="task-form"

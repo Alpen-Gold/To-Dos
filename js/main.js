@@ -4,7 +4,7 @@ let cardsTask = document.querySelector("#cards-task");
 // start project ==============================================
 
 // Local Storge
-let array = [];
+let array = JSON.parse(localStorage.getItem("array")) || [];
 
 // mapped render lists
 let renderList = () => {
